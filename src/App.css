@@ -1,0 +1,148 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(to bottom, rgb(5, 16, 105), rgb(2, 1, 24));
+}
+
+html, body {
+  height: 100%
+}
+#root {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  min-height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Card {
+  background: linear-gradient(to bottom, rgb(1, 1, 44), rgb(7, 7, 7));
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.63);
+  margin: 20px auto;
+  max-width: 320px;
+  padding: 15px;
+  position: relative;
+}
+
+figure {
+  width: 90%;
+  height: 380px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+figure img {
+  max-width: 100%;
+  min-height: 80px;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li img {
+  width: 150px;
+}
+
+
+.movieinfo {
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movieinfo > div {
+  font-weight: 600;
+  color: #fff;
+}
+.movieinfo > p {
+  font-size: 12px;color: #fff;
+}
+
+.ratingbox {
+  background: rgb(240, 217, 9);
+  padding: 2px 8px;
+  text-align: center;
+  display: block;
+  font-weight: 800;
+  border-radius: 5px;
+  color: #333;
+}
+
+header {
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 100;
+  margin: 24px auto;
+}
+
+header h3 {
+  font-weight: 400;
+}
+
+form .input {
+  padding: 15px 10px;
+  width: 320px;
+  border:none;
+  background: transparent;
+  outline: none;
+  overflow: hidden;
+
+}
+
+form .input:focus {
+  border-bottom: 2px solid rgb(113, 37, 255);
+  background: #fff;
+}
+
+form .input::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+form .inputk:hover::after {
+  width: 100%;
+  /* //transition: width .3s; */
+}
+
+form {
+  position: relative;
+  display: inline-block;
+}
+
+form .btn {
+  border: none;
+  position: absolute;
+  /* width: 40px; */
+  height: 100%;
+  right: 10px;
+  z-index: 3;
+  cursor: pointer;
+  background: transparent;
+}
+
+form .btn i {
+  font-size: 20px;
+  color: #333;
+
+}
